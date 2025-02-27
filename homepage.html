@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback System</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+    
+    </style>
+</head>
+<body>
+    
+    <h1>Coderone Feedback System</h1>
+      <img class="Image1"  src="img.jpeg" alt="Round Image" onclick="showForm()">
+      <h2>Click The Image</h2>
+       <div class="feedback-form" id="feedbackForm">
+      <form action="">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" placeholder="Enter your name" ><br><br>
+       
+       <label for="number">Contact Number:</label>
+       <input type="number" id="number" name="number" placeholder="Contact Number"><br><br>
+       
+       <label for="email">Email:</label>
+       <input type="text" id="email" name="email" placeholder="Enter your email"><br><br>
+       
+       <label for="feedback">Describe Your Feedback:</label>
+       <textarea name="feedback" id="feedback" placeholder="Submit your feedback"></textarea><br><br>
+       
+       <button class="sub">Submit</button>
+       </form>
+       </div>
+
+       <script>
+        function showForm()
+        {
+            document.getElementById("feedbackForm").style.display="block";
+        }
+       </script>
+</body>
+</html>
